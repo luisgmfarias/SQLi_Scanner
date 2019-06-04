@@ -3,7 +3,7 @@ from IPython.display import HTML
 import pandas as pd
 import csv
 
-keep=range(4)
+keep=range(2)
     
 sel_terms = pd.read_csv('dorks_terms.csv', skiprows = lambda x: x not in keep, usecols=[0])
 
@@ -24,8 +24,8 @@ for item in sel_terms:
     response.raise_for_status()
     search_results = response.json()
 
-    with open(r'results.csv', 'w') as f:
+    with open(r'results.txt', 'w') as f:
         for results in search_results["webPages"]["value"]:
             f.write(results["url"])
-            f.write(',\n')
+            f.write('#\n')
         
