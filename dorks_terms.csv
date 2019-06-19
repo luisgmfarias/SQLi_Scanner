@@ -1,5 +1,10 @@
-URLS,
+URLs,
 "login.php?dir=",
 "about_us.php?id=",
-"addToCart.php?idProduct="
-"admin.php?page="
+"addToCart.php?idProduct=",
+"admin.php?page=",
+"buy.php?bookid=",
+"detail.php?prodid=",
+"file.php?numero=",
+"index.php?id=",
+"main.php?id="
